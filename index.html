@@ -44,7 +44,7 @@
                 <div class="flex-shrink-0">
                     <a href="#inicio" class="flex items-center group">
                         
-                        <!-- Logo imagen (MÁS GRANDE: h-20 y en BLANCO Y NEGRO: grayscale) -->
+                        <!-- Logo imagen (En BLANCO Y NEGRO: grayscale) -->
                         <img class="h-20 w-auto drop-shadow-md grayscale group-hover:scale-105 transition transform duration-300" 
                              src="assets/logo.png" 
                              alt="Logo Los Caños" 
@@ -55,9 +55,7 @@
                         
                         <!-- Texto con estilos separados -->
                         <div class="flex flex-col justify-center leading-none tracking-wider">
-                            <!-- LOS normal, sólido y con sombra para que se lea bien -->
                             <span class="text-xl font-bold text-white drop-shadow-md -mb-1 ml-1">LOS</span>
-                            <!-- CAÑOS con efecto hueco -->
                             <span class="text-4xl font-black texto-hueco">CAÑOS</span>
                         </div>
 
@@ -85,71 +83,71 @@
 
     <!-- 2. Hero Section -->
     <section class="relative h-screen flex flex-col items-center justify-center hero-scroll-effect pt-24">
-        <!-- Overlay oscuro suave -->
         <div class="absolute inset-0 bg-black/30 z-0"></div>
         
         <div class="relative z-10 text-center px-4 max-w-5xl mx-auto flex flex-col items-center justify-center mt-12">
-            
             <!-- LOGO CENTRAL GIGANTE -->
             <img src="assets/logo.png" 
                  alt="Logo Asociación Los Caños" 
                  class="w-56 md:w-72 lg:w-[350px] mb-6 drop-shadow-2xl hover:scale-105 transition transform duration-500" 
                  onerror="this.style.display='none'">
             
-            <!-- TÍTULO -->
             <h1 class="font-rustica text-6xl md:text-8xl text-white tracking-widest drop-shadow-xl mt-4">
                 ARROYAL DE VIVAR
             </h1>
-            
         </div>
     </section>
 
-    <!-- 3. Arroyal de Vivar (Antiguo "Qué hacemos") -->
+    <!-- 3. Arroyal de Vivar (Sugerencia de Historia + Fotos) -->
     <section id="arroyal" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Arroyal de Vivar</h2>
                 <div class="w-24 h-1 bg-sky-400 mx-auto"></div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
-                    <div class="h-64 bg-gray-300 flex items-center justify-center">
-                        <span class="text-gray-500">[Foto de Proyecto]</span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Desarrollo Rural</h3>
-                        <p class="text-gray-600">Trabajamos para mantener vivo nuestro pueblo mediante iniciativas locales.</p>
-                    </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Texto Sugerido (Puedes editarlo a tu gusto) -->
+                <div>
+                    <h3 class="text-2xl font-bold text-sky-600 mb-4">Nuestras raíces y patrimonio</h3>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Situado en el corazón de la provincia de Burgos, Arroyal de Vivar es un remanso de paz que destaca por su encanto tradicional, sus paisajes naturales y la calidez de sus gentes. Un lugar donde el tiempo parece detenerse y las tradiciones siguen muy vivas.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Pasear por nuestras calles es respirar tranquilidad, admirar la arquitectura típica de la comarca y descubrir rincones llenos de memoria. Nuestra emblemática iglesia y, por supuesto, los históricos caños que dan nombre a nuestra asociación, son testigos mudos de generaciones de vecinos que han cuidado y amado esta tierra.
+                    </p>
                 </div>
-                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
-                    <div class="h-64 bg-gray-300 flex items-center justify-center">
-                        <span class="text-gray-500">[Foto de la Iglesia]</span>
+                
+                <!-- Cuadrícula para dos fotos bonitas -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-gray-200 h-64 rounded-xl overflow-hidden shadow-md">
+                        <!-- Aquí pondrás la ruta de tu foto 1. Ej: src="assets/foto1.jpg" -->
+                        <span class="flex items-center justify-center h-full text-gray-500 font-medium px-4 text-center">[Espacio para foto antigua o de las fiestas]</span>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Conservación</h3>
-                        <p class="text-gray-600">Cuidado y promoción de nuestro patrimonio arquitectónico y cultural.</p>
-                    </div>
-                </div>
-                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
-                    <div class="h-64 bg-gray-300 flex items-center justify-center">
-                        <span class="text-gray-500">[Foto de Vecinos]</span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Comunidad</h3>
-                        <p class="text-gray-600">Creación de espacios de encuentro y convivencia para todos los vecinos.</p>
+                    <div class="bg-gray-200 h-64 rounded-xl overflow-hidden shadow-md mt-12">
+                        <!-- Aquí pondrás la ruta de tu foto 2. Ej: src="assets/foto2.jpg" -->
+                        <span class="flex items-center justify-center h-full text-gray-500 font-medium px-4 text-center">[Espacio para foto del paisaje o los caños]</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 4. La Asociación -->
+    <!-- 4. La Asociación (Estilo Ábrego: Carta del Presidente) -->
     <section id="asociacion" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">La Asociación</h2>
-            <div class="w-24 h-1 bg-sky-400 mx-auto mb-10"></div>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                La Asociación "Los Caños" nace con la vocación de unir a los vecinos de Arroyal de Vivar, proteger nuestras raíces y dinamizar la vida social del pueblo. 
+            <div class="w-24 h-1 bg-sky-400 mx-auto mb-12"></div>
+            
+            <!-- TEXTO PLACEHOLDER PARA EL PRESIDENTE -->
+            <p class="text-xl text-gray-600 leading-relaxed mb-6">
+                Somos una asociación sin ánimo de lucro formada por vecinos y amantes de Arroyal de Vivar, que <strong class="text-gray-900">surge para proteger nuestro pueblo y mantenerlo vivo</strong> a través de proyectos, actividades y eventos que fomenten la convivencia.
+            </p>
+            <p class="text-xl text-gray-600 leading-relaxed mb-6">
+                [AQUÍ IRA EL TEXTO REDACTADO POR EL PRESIDENTE. Cuando me lo pases, sustituiremos estas líneas por sus palabras exactas, manteniendo este formato de letra grande y clara para que todos los vecinos puedan leerlo perfectamente desde sus teléfonos móviles.]
+            </p>
+            <p class="text-xl text-gray-600 leading-relaxed">
+                Apostamos por la <strong class="text-gray-900">colaboración de todos</strong> como la mejor herramienta para impulsar el cuidado de nuestro patrimonio y garantizar el futuro de Arroyal.
             </p>
         </div>
     </section>
