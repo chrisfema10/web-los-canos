@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asociación Los Caños | Arroyal de Vivar</title>
+    <!-- Tailwind CSS (CDN para diseño moderno y rápido) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Efecto Web Scrolling (Parallax) adaptado de las instrucciones */
+        .hero-scroll-effect {
+            background-image: url('assets/iglesia.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* Desplazamiento suave para los enlaces del menú */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased bg-gray-50 text-gray-800">
+
+    <!-- 1. Header Fijo -->
+    <header class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="flex items-center gap-4">
+                        <!-- Logo aumentado a h-20 -->
+                        <img class="h-20 w-auto drop-shadow-sm" src="assets/logo.jpg" alt="Logo Los Caños" onerror="this.src='https://via.placeholder.com/150x50?text=Los+Caños'">
+                        <span class="font-bold text-2xl text-blue-900 tracking-tight">Los Caños</span>
+                    </a>
+                </div>
+                <!-- Menú de Navegación -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#historia" class="text-gray-700 hover:text-blue-600 font-medium transition">Historia</a>
+                    <a href="#calendario" class="text-gray-700 hover:text-blue-600 font-medium transition">Calendario</a>
+                    <a href="#galeria" class="text-gray-700 hover:text-blue-600 font-medium transition">Galería</a>
+                    <a href="#socios" class="bg-blue-900 text-white px-5 py-2 rounded-full font-medium hover:bg-blue-800 transition">Zona Socios</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section (Inicio con efecto Scrolling) -->
+    <section class="relative h-screen flex items-center justify-center hero-scroll-effect">
+        <!-- Overlay oscuro para accesibilidad (alto contraste) -->
+        <div class="absolute inset-0 bg-black/60 z-0"></div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-2 drop-shadow-lg">
+                Asociación <span class="text-blue-400">Los Caños</span>
+            </h1>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-300 mb-8 drop-shadow-md">
+                Arroyal de Vivar
+            </h2>
+            <p class="text-xl md:text-2xl text-gray-200 mb-10 font-light">
+                Preservando nuestro patrimonio, construyendo nuestro futuro.
+            </p>
+            <a href="#historia" class="bg-white text-blue-900 px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-lg">
+                Explorar la web
+            </a>
+        </div>
+    </section>
+
+    <!-- 3. Archivo Histórico (Grid) -->
+    <section id="historia" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nuestro Patrimonio</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <!-- Cuadrícula para fotos y textos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Placeholder Tarjeta 1 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-64 bg-gray-300 flex items-center justify-center">
+                        <span class="text-gray-500">[Espacio para Foto Antigua]</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Orígenes del Pueblo</h3>
+                        <p class="text-gray-600">Espacio preparado para redactar la historia y curiosidades documentadas.</p>
+                    </div>
+                </div>
+                <!-- Placeholder Tarjeta 2 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-64 bg-gray-300 flex items-center justify-center">
+                        <span class="text-gray-500">[Espacio para Foto Antigua]</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">La Iglesia Parroquial</h3>
+                        <p class="text-gray-600">Espacio preparado para redactar detalles arquitectónicos e históricos.</p>
+                    </div>
+                </div>
+                <!-- Placeholder Tarjeta 3 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-64 bg-gray-300 flex items-center justify-center">
+                        <span class="text-gray-500">[Espacio para Foto Antigua]</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Tradiciones y Fiestas</h3>
+                        <p class="text-gray-600">Espacio preparado para redactar costumbres arraigadas en la localidad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Calendario de Actividades (Timeline) -->
+    <section id="calendario" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Próximas Actividades</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+
+            <!-- Interfaz Timeline -->
+            <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-300 before:to-transparent">
+                
+                <!-- Evento 1 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-blue-600 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                        <div class="flex flex-col mb-2">
+                            <span class="font-bold text-blue-600">15 de Agosto, 2026</span>
+                            <h4 class="text-lg font-bold text-gray-900">Fiestas Patronales</h4>
+                        </div>
+                        <p class="text-gray-600">Reunión de la comisión para organizar el pregón y las actividades culturales.</p>
+                    </div>
+                </div>
+
+                <!-- Evento 2 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-gray-300 text-gray-500 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                        <div class="flex flex-col mb-2">
+                            <span class="font-bold text-gray-500">Por determinar</span>
+                            <h4 class="text-lg font-bold text-gray-900">Asamblea General de Socios</h4>
+                        </div>
+                        <p class="text-gray-600">Presentación de cuentas y nuevos proyectos para la asociación.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Zona de Socios (Login Moderno) -->
+    <section id="socios" class="py-20 bg-blue-900 relative overflow-hidden">
+        <!-- Decoración de fondo -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg" id="patternId" x="0" y="0" width="100" height="100" viewBox="0 0 100 100"><rect fill="#ffffff" width="100" height="100"/><circle fill="#000000" cx="50" cy="50" r="10"/></svg>
+        </div>
+        
+        <div class="relative max-w-lg mx-auto px-4 sm:px-6 lg:px-8 z-10">
+            <div class="bg-white p-8 md:p-10 rounded-2xl shadow-2xl">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold text-gray-900">Acceso Socios</h2>
+                    <p class="text-gray-500 mt-2">Consulta los estatutos y el estado de cuentas.</p>
+                </div>
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <label for="usuario" class="block text-sm font-medium text-gray-700">Usuario o DNI</label>
+                        <div class="mt-1">
+                            <input id="usuario" name="usuario" type="text" required class="appearance-none block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 transition">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-700">Contraseña</label>
+                        <div class="mt-1">
+                            <input id="password" name="password" type="password" required class="appearance-none block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 transition">
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-lg font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition">
+                            Entrar al portal
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">Los Caños</h3>
+                <p class="text-gray-400">Asociación y comisión de Redes Sociales dedicada a preservar el legado de Arroyal de Vivar.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Contacto</h3>
+                <p class="text-gray-400">Email: asociacionloscanos@gmail.com</p>
+                <p class="text-gray-400">Ubicación: Arroyal de Vivar, Burgos</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Redes Sociales</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition">Instagram</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+            &copy; 2026 Asociación Los Caños. Todos los derechos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>
